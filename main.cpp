@@ -2,8 +2,8 @@
 using namespace std;
 int main() {
   //Lea un arreglo de 10 caracteres y devolver si  la palabra palíndroma y la palabra no palíndroma, hasta recibir un arreglo de 10 asteriscos (*)
-  char arr [10];
-  char arr2 [10];
+  char arr [20];
+  char arr2 [20];
   
   int contador;
   do{
