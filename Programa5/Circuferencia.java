@@ -5,14 +5,19 @@ import javax.swing.JFrame;
 public class Circuferencia extends JApplet {
 
   public void paint (Graphics g) {
+   int a=100;
+   int b=60;
+   int c=100;
    Graphics2D G2D = (Graphics2D) g;
+   while (a>=0){
    G2D.setColor( Color.ORANGE );
-   G2D.setFont( new Font( "Corbel Light", Font.PLAIN, 100 ) );
+   G2D.setFont( new Font( "Corbel Light", Font.BOLD, a ) );
    G2D.setRenderingHint( RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_LCD_HRGB );
-   g.drawString ("O", 60, 100);
-   G2D.setColor( Color.WHITE );
-   G2D.setFont( new Font( "Corbel Light", Font.PLAIN, 90 ) );
-   g.drawString ("O", 64, 96);
+   g.drawString ("O", b, c);
+   a=a-10;
+   b=b+4;
+   c=c-4;
+   }
    
   }
 
